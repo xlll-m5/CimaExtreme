@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="icon" type="image/png" href="c6876ccc-1a7c-43d2-bf0f-9514fb895ae6.jpeg">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CimaStream - الرئيسية</title>
+    <meta src="c6876ccc-1a7c-43d2-bf0f-9514fb895ae6.jpeg" alt="logo">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+<a href="index.html" class="logo">
+        <img src="logo.png" alt="CimaStream Logo" class="header-logo">
+    </a>
+                <nav>
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="#">أفلام</a></li>
+                    <li><a href="#">مسلسلات</a></li>
+                    <li><a href="subscription.html">الاشتراك</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>أهلاً بك في CimaStream</h1>
+                <p>شاهد أحدث الأفلام والمسلسلات الحصرية بلا حدود.</p>
+            </div>
+        </section>
+
+        <section class="filters container">
+            <h3>تصفح حسب</h3>
+            <div class="filter-options">
+                <select name="genre">
+                    <option value="">التصنيف (النوع)</option>
+                    <option value="action">أكشن</option>
+                    <option value="drama">دراما</option>
+                    <option value="comedy">كوميدي</option>
+                </select>
+                <select name="rating">
+                    <option value="">التقييم</option>
+                    <option value="PG-13">PG-13</option>
+                    <option value="R">R</option>
+                    <option value="G">G</option>
+                </select>
+                <select name="country">
+                    <option value="">البلد</option>
+                    <option value="usa">أجنبي</option>
+                    <option value="egypt">عربي</option>
+                    <option value="turkey">تركي</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="movies-grid container">
+            <h2>أضيف مؤخراً</h2>
+            <div id="moviesGrid">
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CimaStream. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم الإدارة - CimaStream</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">CimaStream - لوحة التحكم</a>
+        </div>
+    </header>
+
+    <main class="auth-page">
+        <div class="auth-form" style="max-width: 800px;">
+            <h2>إضافة فيلم / مسلسل جديد</h2>
+            
+            <form id="adminMovieForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="title">عنوان الفيلم</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                 <div class="form-group">
+                    <label for="year">سنة الإنتاج</label>
+                    <input type="number" id="year" name="year" placeholder="2024">
+                </div>
+                
+                <div class="form-group">
+                    <label for="rating">التقييم (مثال: 8.5)</label>
+                    <input type="number" id="rating" name="rating" min="0" max="10" step="0.1" placeholder="0.0">
+                </div>
+                 <div class="form-group">
+                    <label for="classification">التصنيف (العمري)</label>
+                    <select id="classification" name="classification" style="width: 100%; padding: 12px; font-family: var(--body-font);">
+                        <option value="G">G (جميع الأعمار)</option>
+                        <option value="PG">PG (بإشراف عائلي)</option>
+                        <option value="PG-13">PG-13 (فوق 13)</option>
+                        <option value="R">R (للكبار فقط)</option>
+                        <option value="Family">عائلي</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="genre">النوع (افصل بفاصلة ,)</label>
+                    <input type="text" id="genre" name="genre" placeholder="مثال: أكشن, مغامرة">
+                </div>
+                   
+                <div class="form-group">
+                    <label for="country">البلد</label>
+                    <input type="text" id="country" name="country" placeholder="مثال: أجنبي">
+                </div>
+                <div class="form-group">
+                    <label for="description">الوصف (القصة)</label>
+                    <textarea id="description" name="description" rows="5" style="width: 100%; padding: 10px; font-family: var(--body-font);"></textarea>
+                </div>
+                  <div class="form-group">
+                    <label for="poster">بوستر الفيلم (صورة)</label>
+                    <input type="file" id="poster" name="poster" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="movie_file">ملف الفيلم (فيديو)</label>
+                    <input type="file" id="movie_file" name="movie_file" accept="video/*" required>
+                </div>
+
+                <div id="message" style="margin-top: 15px; font-weight: bold;"></div>
+
+                <button type="submit" class="btn btn-primary">إضافة الفيلم</button>
+            </form>
+            
+        </div>
+    </main>
+
+    <script src="admin-script.js"></script>
+
+</body>
+</html>
