@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    const API_URL = 'http://localhost:5000/api';
-
+const API_URL = 'https://cimastream-api.onrender.com/api';
     // --- 1. إعداد الهيدر الذكي ---
     const setupDynamicHeader = () => {
         const authButtonsDiv = document.querySelector('.auth-buttons');
