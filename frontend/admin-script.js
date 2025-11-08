@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const adminForm = document.getElementById('adminMovieForm');
-const API_URL = 'https://cimastream-api.onrender.com/api';
+const API_URL = 'https://cimastream.onrender.com/api';
 
     if (adminForm) {
         adminForm.addEventListener('submit', async (e) => {
@@ -72,3 +72,4 @@ const API_URL = 'https://cimastream-api.onrender.com/api';
         });
     }
 });
+
